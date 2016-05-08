@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <glob.h>
+#include <assert.h>
 
 using namespace std;
 
@@ -21,6 +22,16 @@ vector<string> list_directory(const string &rect_folder) {
     folders.push_back(string(glob_result.gl_pathv[i]));
   }
   return folders;
+}
+
+string remove_prefix(const string str, const string prefix) {
+  string::const_iterator str_iter = str.begin();
+  for(string::const_iterator prefix_iter = prefix.begin(); prefix_iter != prefix.end(); ++prefix_iter) {
+    assert(*str_iter == *prefix_iter);
+    ++str_iter;
+  }
+  
+  return string(str_iter, str.end());
 }
 
 string extract_filename(const string &full_filename) {
@@ -48,9 +59,9 @@ void build_list_file(const std::string &rect_folder, const std::string &target_p
   vector<string> not_present_images = list_directory(folders[0]);
   
   for(vector<string>::const_iterator iter = not_present_images.begin(); iter != not_present_images.end(); iter++) {
-    string full_filename = *iter;
-    string filename = extract_filename(full_filename);
+    string relative_filepath = remove_prefix(*iter, rect_folder);
+    string filename = extract_filename(relative_filepath);
     string label = extract_label(filename);
-    cout << *iter << endl;
+    cout << filename << ' ' << label << endl;
   }
 }
