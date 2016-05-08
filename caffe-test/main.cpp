@@ -7,9 +7,19 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <string>
+
+# include "build_rect_list_file.hpp"
+
+using namespace std;
+
+const string IMAGES_PATH = "/Users/th3james/src/curricular/ros_labelled_image_streamer/training/training-data/rects";
+const std::vector<string> paths {"0", "4", "7", "14", "11", "25", "present"};
+
+const string LIST_FILE = "./rect_images.list";
 
 int main(int argc, const char * argv[]) {
-  // insert code here...
-  std::cout << "Hello, World!\n";
-    return 0;
+  build_list_file(IMAGES_PATH, LIST_FILE);
+  return 0;
 }

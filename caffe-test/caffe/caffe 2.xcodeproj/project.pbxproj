@@ -1,0 +1,209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		8A500AE01CD557B00086669F /* .build_release */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .build_release; sourceTree = "<group>"; };
+		8A500AE11CD557B00086669F /* .Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = .Doxyfile; sourceTree = "<group>"; };
+		8A500AE21CD557B00086669F /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		8A500AE31CD557B00086669F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8A500AE41CD557B00086669F /* .Makefile.config.un~ */ = {isa = PBXFileReference; lastKnownFileType = file; path = ".Makefile.config.un~"; sourceTree = "<group>"; };
+		8A500AE51CD557B00086669F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		8A500AE61CD557B00086669F /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
+		8A500AE71CD557B00086669F /* caffe.cloc */ = {isa = PBXFileReference; lastKnownFileType = text; path = caffe.cloc; sourceTree = "<group>"; };
+		8A500AE81CD557B00086669F /* caffe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = caffe.xcodeproj; sourceTree = "<group>"; };
+		8A500AEB1CD557B00086669F /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		8A500AEC1CD557B00086669F /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8A500AED1CD557B00086669F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		8A500AEE1CD557B00086669F /* CONTRIBUTORS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTORS.md; sourceTree = "<group>"; };
+		8A500AEF1CD557B00086669F /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		8A500AF01CD557B00086669F /* distribute */ = {isa = PBXFileReference; lastKnownFileType = folder; path = distribute; sourceTree = "<group>"; };
+		8A500AF11CD557B00086669F /* docker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docker; sourceTree = "<group>"; };
+		8A500AF21CD557B00086669F /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
+		8A500AF31CD557B00086669F /* examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = examples; sourceTree = "<group>"; };
+		8A500AF41CD557B00086669F /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		8A500AF51CD557B00086669F /* INSTALL.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INSTALL.md; sourceTree = "<group>"; };
+		8A500AF61CD557B00086669F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8A500AF71CD557B00086669F /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8A500AF81CD557B00086669F /* Makefile.config */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.config; sourceTree = "<group>"; };
+		8A500AF91CD557B00086669F /* Makefile.config.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.config.example; sourceTree = "<group>"; };
+		8A500AFA1CD557B00086669F /* matlab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = matlab; sourceTree = "<group>"; };
+		8A500AFB1CD557B00086669F /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
+		8A500AFC1CD557B00086669F /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python; sourceTree = "<group>"; };
+		8A500AFD1CD557B00086669F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8A500AFE1CD557B00086669F /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		8A500AFF1CD557B00086669F /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		8A500B001CD557B00086669F /* tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tools; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8A500ADA1CD557B00086669F = {
+			isa = PBXGroup;
+			children = (
+				8A500AE01CD557B00086669F /* .build_release */,
+				8A500AE11CD557B00086669F /* .Doxyfile */,
+				8A500AE21CD557B00086669F /* .DS_Store */,
+				8A500AE31CD557B00086669F /* .gitignore */,
+				8A500AE41CD557B00086669F /* .Makefile.config.un~ */,
+				8A500AE51CD557B00086669F /* .travis.yml */,
+				8A500AE61CD557B00086669F /* build */,
+				8A500AE71CD557B00086669F /* caffe.cloc */,
+				8A500AE81CD557B00086669F /* caffe.xcodeproj */,
+				8A500AEB1CD557B00086669F /* cmake */,
+				8A500AEC1CD557B00086669F /* CMakeLists.txt */,
+				8A500AED1CD557B00086669F /* CONTRIBUTING.md */,
+				8A500AEE1CD557B00086669F /* CONTRIBUTORS.md */,
+				8A500AEF1CD557B00086669F /* data */,
+				8A500AF01CD557B00086669F /* distribute */,
+				8A500AF11CD557B00086669F /* docker */,
+				8A500AF21CD557B00086669F /* docs */,
+				8A500AF31CD557B00086669F /* examples */,
+				8A500AF41CD557B00086669F /* include */,
+				8A500AF51CD557B00086669F /* INSTALL.md */,
+				8A500AF61CD557B00086669F /* LICENSE */,
+				8A500AF71CD557B00086669F /* Makefile */,
+				8A500AF81CD557B00086669F /* Makefile.config */,
+				8A500AF91CD557B00086669F /* Makefile.config.example */,
+				8A500AFA1CD557B00086669F /* matlab */,
+				8A500AFB1CD557B00086669F /* models */,
+				8A500AFC1CD557B00086669F /* python */,
+				8A500AFD1CD557B00086669F /* README.md */,
+				8A500AFE1CD557B00086669F /* scripts */,
+				8A500AFF1CD557B00086669F /* src */,
+				8A500B001CD557B00086669F /* tools */,
+			);
+			sourceTree = "<group>";
+		};
+		8A500AE91CD557B00086669F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		8A500ADF1CD557B00086669F /* caffe */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 8A500B021CD557B00086669F /* Build configuration list for PBXLegacyTarget "caffe" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/th3james/src/curricular/cpp/caffe-test/caffe-test/caffe";
+			dependencies = (
+			);
+			name = caffe;
+			passBuildSettingsInEnvironment = 1;
+			productName = caffe;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		8A500ADB1CD557B00086669F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 8A500ADE1CD557B00086669F /* Build configuration list for PBXProject "caffe 2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A500ADA1CD557B00086669F;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8A500AE91CD557B00086669F /* Products */;
+					ProjectRef = 8A500AE81CD557B00086669F /* caffe.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8A500ADF1CD557B00086669F /* caffe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		8A500ADC1CD557B00086669F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		8A500ADD1CD557B00086669F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		8A500B031CD557B00086669F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = caffe;
+			};
+			name = Debug;
+		};
+		8A500B041CD557B00086669F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = caffe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A500ADE1CD557B00086669F /* Build configuration list for PBXProject "caffe 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A500ADC1CD557B00086669F /* Debug */,
+				8A500ADD1CD557B00086669F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A500B021CD557B00086669F /* Build configuration list for PBXLegacyTarget "caffe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A500B031CD557B00086669F /* Debug */,
+				8A500B041CD557B00086669F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A500ADB1CD557B00086669F /* Project object */;
+}
