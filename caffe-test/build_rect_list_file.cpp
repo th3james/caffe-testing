@@ -62,6 +62,6 @@ void build_list_file(const std::string &rect_folder, const std::string &target_p
     string relative_filepath = remove_prefix(*iter, rect_folder);
     string filename = extract_filename(relative_filepath);
     string label = extract_label(filename);
-    cout << filename << ' ' << label << endl;
+    cout << relative_filepath << ' ' << label << endl;
   }
 }
