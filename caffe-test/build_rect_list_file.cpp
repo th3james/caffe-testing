@@ -14,6 +14,11 @@
 
 using namespace std;
 
+PathAndLabel::PathAndLabel(string thePath, string theLabel) {
+  path = thePath;
+  label = theLabel;
+}
+
 vector<string> list_directory(const string &rect_folder) {
   vector<string> folders;
   glob_t glob_result;
@@ -54,14 +59,18 @@ string extract_label(const string &filename) {
   return string(filename.begin(), iter);
 }
 
-void build_list_file(const std::string &rect_folder, const std::string &target_path) {
+vector<PathAndLabel> build_list_file(const std::string &rect_folder, const std::string &target_path) {
   vector<string> folders = list_directory(rect_folder);
   vector<string> not_present_images = list_directory(folders[0]);
+  
+  vector<PathAndLabel> paths_and_labels;
   
   for(vector<string>::const_iterator iter = not_present_images.begin(); iter != not_present_images.end(); iter++) {
     string relative_filepath = remove_prefix(*iter, rect_folder);
     string filename = extract_filename(relative_filepath);
     string label = extract_label(filename);
-    cout << relative_filepath << ' ' << label << endl;
+    paths_and_labels.push_back(PathAndLabel(relative_filepath, label));
   }
+  
+  return paths_and_labels;
 }

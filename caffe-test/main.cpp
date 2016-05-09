@@ -20,6 +20,10 @@ const std::vector<string> paths {"0", "4", "7", "14", "11", "25", "present"};
 const string LIST_FILE = "./rect_images.list";
 
 int main(int argc, const char * argv[]) {
-  build_list_file(IMAGES_PATH, LIST_FILE);
+  vector<PathAndLabel> list_components = build_list_file(IMAGES_PATH, LIST_FILE);
+  
+  for(vector<PathAndLabel>::const_iterator iter = list_components.begin(); iter != list_components.end(); iter++) {
+    cout << iter->path << ", " << iter->label << endl;
+  }
   return 0;
 }

@@ -10,7 +10,15 @@
 #define build_rect_list_file_hpp
 
 #include <string>
+#include <vector>
 
-void build_list_file(const std::string &rect_folder, const std::string &target_path);
+struct PathAndLabel {
+  std::string path;
+  std::string label;
+  
+  PathAndLabel(std::string thePath, std::string theLabel);
+};
+
+std::vector<PathAndLabel> build_list_file(const std::string &rect_folder, const std::string &target_path);
 
 #endif /* build_rect_list_file_hpp */
