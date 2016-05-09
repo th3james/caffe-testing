@@ -19,6 +19,6 @@ struct PathAndLabel {
   PathAndLabel(std::string thePath, std::string theLabel);
 };
 
-std::vector<PathAndLabel> build_list_file(const std::string &rect_folder, const std::string &target_path);
+std::vector<PathAndLabel> build_list_file(const std::string &folder_path, const std::string &root_folder);
 
 #endif /* build_rect_list_file_hpp */

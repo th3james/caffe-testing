@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A500AAF1CD4F1CD0086669F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500AAE1CD4F1CD0086669F /* main.cpp */; };
 		8A500B0C1CDF95810086669F /* build_rect_list_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */; };
+		8A500B0F1CE0FC380086669F /* dir_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500B0D1CE0FC380086669F /* dir_utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		8A500B091CDF81BC0086669F /* build_rect_image_set.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_rect_image_set.sh; sourceTree = "<group>"; };
 		8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = build_rect_list_file.cpp; sourceTree = "<group>"; };
 		8A500B0B1CDF95810086669F /* build_rect_list_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = build_rect_list_file.hpp; sourceTree = "<group>"; };
+		8A500B0D1CE0FC380086669F /* dir_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dir_utils.cpp; path = "caffe-test/dir_utils.cpp"; sourceTree = "<group>"; };
+		8A500B0E1CE0FC380086669F /* dir_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dir_utils.hpp; path = "caffe-test/dir_utils.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,8 @@
 		8A500AA21CD4F1CD0086669F = {
 			isa = PBXGroup;
 			children = (
+				8A500B0D1CE0FC380086669F /* dir_utils.cpp */,
+				8A500B0E1CE0FC380086669F /* dir_utils.hpp */,
 				8A500AAD1CD4F1CD0086669F /* caffe-test */,
 				8A500AAC1CD4F1CD0086669F /* Products */,
 			);
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A500B0C1CDF95810086669F /* build_rect_list_file.cpp in Sources */,
+				8A500B0F1CE0FC380086669F /* dir_utils.cpp in Sources */,
 				8A500AAF1CD4F1CD0086669F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

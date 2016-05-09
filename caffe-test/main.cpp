@@ -10,7 +10,8 @@
 #include <vector>
 #include <string>
 
-# include "build_rect_list_file.hpp"
+#include "build_rect_list_file.hpp"
+#include "dir_utils.hpp"
 
 using namespace std;
 
@@ -20,7 +21,8 @@ const std::vector<string> paths {"0", "4", "7", "14", "11", "25", "present"};
 const string LIST_FILE = "./rect_images.list";
 
 int main(int argc, const char * argv[]) {
-  vector<PathAndLabel> list_components = build_list_file(IMAGES_PATH, LIST_FILE);
+  vector<string> sub_folders = DirUtils::list_directory(IMAGES_PATH);
+  vector<PathAndLabel> list_components = build_list_file(sub_folders[0], IMAGES_PATH);
   
   for(vector<PathAndLabel>::const_iterator iter = list_components.begin(); iter != list_components.end(); iter++) {
     cout << iter->path << ", " << iter->label << endl;
