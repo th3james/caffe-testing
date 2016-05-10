@@ -19,7 +19,7 @@ PathAndLabel::PathAndLabel(string thePath, string theLabel) {
   label = theLabel;
 }
 
-string remove_prefix(const string str, const string prefix) {
+string remove_prefix(const string str, const string &prefix) {
   string::const_iterator str_iter = str.begin();
   for(string::const_iterator prefix_iter = prefix.begin(); prefix_iter != prefix.end(); ++prefix_iter) {
     assert(*str_iter == *prefix_iter);
