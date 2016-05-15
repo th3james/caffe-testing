@@ -51,7 +51,7 @@ int main(int argc, const char * argv[]) {
   std::ofstream outputFile(LIST_FILE);
   
   for(std::vector<PathAndLabel>::const_iterator iter = list_components.begin(); iter != list_components.end(); iter++) {
-    outputFile << iter->path << ", " << iter->label << std::endl;
+    outputFile << iter->path << " " << iter->label << std::endl;
   }
   
   std::cout << "List file written to " << LIST_FILE  << std::endl;
