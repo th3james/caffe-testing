@@ -10,10 +10,21 @@
 		8A500AAF1CD4F1CD0086669F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500AAE1CD4F1CD0086669F /* main.cpp */; };
 		8A500B0C1CDF95810086669F /* build_rect_list_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */; };
 		8A500B0F1CE0FC380086669F /* dir_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500B0D1CE0FC380086669F /* dir_utils.cpp */; };
+		8A500B131CE8B0280086669F /* partition_train_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500B111CE8B0280086669F /* partition_train_test.cpp */; };
+		8A500B1F1CE8B0CA0086669F /* partition_train_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A500B111CE8B0280086669F /* partition_train_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8A500AA91CD4F1CD0086669F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8A500B161CE8B0B20086669F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -31,12 +42,22 @@
 		8A500B091CDF81BC0086669F /* build_rect_image_set.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_rect_image_set.sh; sourceTree = "<group>"; };
 		8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = build_rect_list_file.cpp; sourceTree = "<group>"; };
 		8A500B0B1CDF95810086669F /* build_rect_list_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = build_rect_list_file.hpp; sourceTree = "<group>"; };
-		8A500B0D1CE0FC380086669F /* dir_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dir_utils.cpp; path = "caffe-test/dir_utils.cpp"; sourceTree = "<group>"; };
-		8A500B0E1CE0FC380086669F /* dir_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dir_utils.hpp; path = "caffe-test/dir_utils.hpp"; sourceTree = "<group>"; };
+		8A500B0D1CE0FC380086669F /* dir_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dir_utils.cpp; sourceTree = "<group>"; };
+		8A500B0E1CE0FC380086669F /* dir_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dir_utils.hpp; sourceTree = "<group>"; };
+		8A500B111CE8B0280086669F /* partition_train_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = partition_train_test.cpp; sourceTree = "<group>"; };
+		8A500B181CE8B0B20086669F /* partition-train-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "partition-train-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A500B1A1CE8B0B20086669F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8A500AA81CD4F1CD0086669F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A500B151CE8B0B20086669F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,9 +70,8 @@
 		8A500AA21CD4F1CD0086669F = {
 			isa = PBXGroup;
 			children = (
-				8A500B0D1CE0FC380086669F /* dir_utils.cpp */,
-				8A500B0E1CE0FC380086669F /* dir_utils.hpp */,
 				8A500AAD1CD4F1CD0086669F /* caffe-test */,
+				8A500B191CE8B0B20086669F /* partition-train-test */,
 				8A500AAC1CD4F1CD0086669F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8A500AAB1CD4F1CD0086669F /* caffe-test */,
+				8A500B181CE8B0B20086669F /* partition-train-test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,11 +88,10 @@
 		8A500AAD1CD4F1CD0086669F /* caffe-test */ = {
 			isa = PBXGroup;
 			children = (
+				8A500B101CE8AF860086669F /* bulid_training_set */,
 				8A500AAE1CD4F1CD0086669F /* main.cpp */,
 				8A500B051CD557B10086669F /* caffe 2.xcodeproj */,
 				8A500B091CDF81BC0086669F /* build_rect_image_set.sh */,
-				8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */,
-				8A500B0B1CDF95810086669F /* build_rect_list_file.hpp */,
 			);
 			path = "caffe-test";
 			sourceTree = "<group>";
@@ -81,6 +101,26 @@
 			children = (
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8A500B101CE8AF860086669F /* bulid_training_set */ = {
+			isa = PBXGroup;
+			children = (
+				8A500B0D1CE0FC380086669F /* dir_utils.cpp */,
+				8A500B0E1CE0FC380086669F /* dir_utils.hpp */,
+				8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */,
+				8A500B0B1CDF95810086669F /* build_rect_list_file.hpp */,
+				8A500B111CE8B0280086669F /* partition_train_test.cpp */,
+			);
+			name = bulid_training_set;
+			sourceTree = "<group>";
+		};
+		8A500B191CE8B0B20086669F /* partition-train-test */ = {
+			isa = PBXGroup;
+			children = (
+				8A500B1A1CE8B0B20086669F /* main.cpp */,
+			);
+			path = "partition-train-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +143,23 @@
 			productReference = 8A500AAB1CD4F1CD0086669F /* caffe-test */;
 			productType = "com.apple.product-type.tool";
 		};
+		8A500B171CE8B0B20086669F /* partition-train-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A500B1C1CE8B0B20086669F /* Build configuration list for PBXNativeTarget "partition-train-test" */;
+			buildPhases = (
+				8A500B141CE8B0B20086669F /* Sources */,
+				8A500B151CE8B0B20086669F /* Frameworks */,
+				8A500B161CE8B0B20086669F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "partition-train-test";
+			productName = "partition-train-test";
+			productReference = 8A500B181CE8B0B20086669F /* partition-train-test */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -113,6 +170,9 @@
 				ORGANIZATIONNAME = "James Cox-Morton";
 				TargetAttributes = {
 					8A500AAA1CD4F1CD0086669F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8A500B171CE8B0B20086669F = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -136,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				8A500AAA1CD4F1CD0086669F /* caffe-test */,
+				8A500B171CE8B0B20086669F /* partition-train-test */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +209,15 @@
 				8A500B0C1CDF95810086669F /* build_rect_list_file.cpp in Sources */,
 				8A500B0F1CE0FC380086669F /* dir_utils.cpp in Sources */,
 				8A500AAF1CD4F1CD0086669F /* main.cpp in Sources */,
+				8A500B131CE8B0280086669F /* partition_train_test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A500B141CE8B0B20086669F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A500B1F1CE8B0CA0086669F /* partition_train_test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +319,20 @@
 			};
 			name = Release;
 		};
+		8A500B1D1CE8B0B20086669F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A500B1E1CE8B0B20086669F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -266,6 +350,14 @@
 			buildConfigurations = (
 				8A500AB31CD4F1CD0086669F /* Debug */,
 				8A500AB41CD4F1CD0086669F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A500B1C1CE8B0B20086669F /* Build configuration list for PBXNativeTarget "partition-train-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A500B1D1CE8B0B20086669F /* Debug */,
+				8A500B1E1CE8B0B20086669F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
