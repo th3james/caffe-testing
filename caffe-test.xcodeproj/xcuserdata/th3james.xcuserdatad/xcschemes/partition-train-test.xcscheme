@@ -66,6 +66,10 @@
             argument = "/Users/th3james/src/curricular/cpp/caffe-test/caffe-test/rect_images.list"
             isEnabled = "YES">
          </CommandLineArgument>
+         <CommandLineArgument
+            argument = ""
+            isEnabled = "YES">
+         </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
