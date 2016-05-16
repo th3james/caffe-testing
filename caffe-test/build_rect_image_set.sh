@@ -11,4 +11,5 @@ IMAGES_PATH="/Users/th3james/src/curricular/ros_labelled_image_streamer/training
 LIST_FILE_PATH="rect_images.list"
 OUTPUT_PATH="rects_lmdb"
 
-$CAFFE_PATH/build/tools/convert_imageset.bin $IMAGES_PATH $LIST_FILE_PATH $OUTPUT_PATH -shuffle
+$CAFFE_PATH/build/tools/convert_imageset.bin $IMAGES_PATH $LIST_FILE_PATH.train $OUTPUT_PATH.train -shuffle
+$CAFFE_PATH/build/tools/convert_imageset.bin $IMAGES_PATH $LIST_FILE_PATH.test $OUTPUT_PATH.test -shuffle

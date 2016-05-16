@@ -47,6 +47,9 @@
 		8A500B111CE8B0280086669F /* partition_train_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = partition_train_test.cpp; sourceTree = "<group>"; };
 		8A500B181CE8B0B20086669F /* partition-train-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "partition-train-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A500B1A1CE8B0B20086669F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8A500B211CEA2DDE0086669F /* train_rect_images.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = train_rect_images.sh; sourceTree = "<group>"; };
+		8A500B221CEA2FF10086669F /* rects_solver.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rects_solver.prototxt; sourceTree = "<group>"; };
+		8A500B231CEA307E0086669F /* rects_lenet.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rects_lenet.prototxt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +93,10 @@
 			children = (
 				8A500B101CE8AF860086669F /* bulid_training_set */,
 				8A500AAE1CD4F1CD0086669F /* main.cpp */,
+				8A500B211CEA2DDE0086669F /* train_rect_images.sh */,
+				8A500B221CEA2FF10086669F /* rects_solver.prototxt */,
+				8A500B231CEA307E0086669F /* rects_lenet.prototxt */,
 				8A500B051CD557B10086669F /* caffe 2.xcodeproj */,
-				8A500B091CDF81BC0086669F /* build_rect_image_set.sh */,
 			);
 			path = "caffe-test";
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		8A500B101CE8AF860086669F /* bulid_training_set */ = {
 			isa = PBXGroup;
 			children = (
+				8A500B091CDF81BC0086669F /* build_rect_image_set.sh */,
 				8A500B0D1CE0FC380086669F /* dir_utils.cpp */,
 				8A500B0E1CE0FC380086669F /* dir_utils.hpp */,
 				8A500B0A1CDF95810086669F /* build_rect_list_file.cpp */,
