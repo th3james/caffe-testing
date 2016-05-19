@@ -1,14 +1,11 @@
 name: "LeNet"
 layer {
-  name: "mnist"
+  name: "rects"
   type: "Data"
   top: "data"
   top: "label"
   include {
     phase: TRAIN
-  }
-  transform_param {
-    scale: 0.00390625
   }
   data_param {
     source: "rects_lmdb.train"
@@ -17,18 +14,15 @@ layer {
   }
 }
 layer {
-  name: "mnist"
+  name: "rects"
   type: "Data"
   top: "data"
   top: "label"
   include {
     phase: TEST
   }
-  transform_param {
-    scale: 0.00390625
-  }
   data_param {
-    source: "rects_lmdb.train"
+    source: "rects_lmdb.test"
     batch_size: 100
     backend: LMDB
   }
