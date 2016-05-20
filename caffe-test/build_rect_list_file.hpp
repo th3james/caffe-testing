@@ -11,13 +11,7 @@
 
 #include <string>
 #include <vector>
-
-struct PathAndLabel {
-  std::string path;
-  std::string label;
-  
-  PathAndLabel(std::string thePath, std::string theLabel);
-};
+#include "path_and_label.hpp"
 
 std::vector<PathAndLabel> build_list_file(const std::string &folder_path, const std::string &root_folder);
 

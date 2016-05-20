@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>build_full_image_listfile.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>caffe-test.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>8A500B171CE8B0B20086669F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A500B2D1CEE5F3E0086669F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -11,13 +11,9 @@
 #include <vector>
 #include <assert.h>
 #include "dir_utils.hpp"
+#include "path_and_label.hpp"
 
 using namespace std;
-
-PathAndLabel::PathAndLabel(string thePath, string theLabel) {
-  path = thePath;
-  label = theLabel;
-}
 
 string remove_prefix(const string str, const string &prefix) {
   string::const_iterator str_iter = str.begin();

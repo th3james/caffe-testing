@@ -9,12 +9,12 @@
 #include <unistd.h>
 
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <string>
 
 #include "build_rect_list_file.hpp"
 #include "dir_utils.hpp"
+#include "list_file_writer.hpp"
 
 const std::string IMAGES_PATH = "/Users/th3james/src/curricular/ros_labelled_image_streamer/training/training-data/rects";
 const std::vector<std::string> paths = {"0", "4", "7", "14", "11", "25", "present"};
@@ -48,11 +48,7 @@ int main(int argc, const char * argv[]) {
     copy(folder_list_components.begin(), folder_list_components.end(), back_inserter(list_components));
   }
   
-  std::ofstream outputFile(LIST_FILE);
-  
-  for(std::vector<PathAndLabel>::const_iterator iter = list_components.begin(); iter != list_components.end(); iter++) {
-    outputFile << iter->path << " " << iter->label << std::endl;
-  }
+  ListFileWriter::writeFile(list_components, LIST_FILE);
   
   std::cout << "List file written to " << LIST_FILE  << std::endl;
   return 0;
