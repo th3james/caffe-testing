@@ -63,11 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/th3james/src/curricular/cpp/caffe-test/caffe-test/rect_images.list"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = ""
+            argument = "/Users/th3james/src/curricular/cpp/caffe-test/caffe-test/full_images.list"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

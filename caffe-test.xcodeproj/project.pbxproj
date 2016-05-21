@@ -54,6 +54,7 @@
 		8A3E837C1CEF379C000301DD /* path_and_label.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = path_and_label.hpp; sourceTree = "<group>"; };
 		8A3E83821CEF6612000301DD /* list_file_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list_file_writer.cpp; sourceTree = "<group>"; };
 		8A3E83831CEF6612000301DD /* list_file_writer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = list_file_writer.hpp; sourceTree = "<group>"; };
+		8A3E83911CF0AD18000301DD /* build_full_image_set.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_full_image_set.sh; sourceTree = "<group>"; };
 		8A500AAB1CD4F1CD0086669F /* caffe-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "caffe-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A500AAE1CD4F1CD0086669F /* build_rect_image_listfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = build_rect_image_listfile.cpp; sourceTree = "<group>"; };
 		8A500B051CD557B10086669F /* caffe 2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "caffe 2.xcodeproj"; path = "caffe/caffe 2.xcodeproj"; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				8A500B091CDF81BC0086669F /* build_rect_image_set.sh */,
+				8A3E83911CF0AD18000301DD /* build_full_image_set.sh */,
 				8A500B0D1CE0FC380086669F /* dir_utils.cpp */,
 				8A500B0E1CE0FC380086669F /* dir_utils.hpp */,
 				8A500B0A1CDF95810086669F /* rect_list_file_handler.cpp */,
