@@ -9,7 +9,7 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>caffe-test.xcscheme</key>
+		<key>build_rect_image_listfile.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>

@@ -12,7 +12,7 @@
 #include <vector>
 #include <string>
 
-#include "build_rect_list_file.hpp"
+#include "rect_list_file_handler.hpp"
 #include "dir_utils.hpp"
 #include "list_file_writer.hpp"
 
@@ -43,7 +43,7 @@ int main(int argc, const char * argv[]) {
   std::vector<PathAndLabel> list_components;
   
   for(strv_iter iter = sub_folders.begin(); iter != sub_folders.end(); iter++) {
-    std::vector<PathAndLabel> folder_list_components = build_list_file(*iter, IMAGES_PATH);
+    std::vector<PathAndLabel> folder_list_components = RectListFileHandler::fetchListEntries(*iter, IMAGES_PATH);
     
     copy(folder_list_components.begin(), folder_list_components.end(), back_inserter(list_components));
   }

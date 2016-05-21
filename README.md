@@ -12,4 +12,8 @@ A list file is simply described (in convert_imageset.cpp in Caffe's source) as
     // LISTFILE should be a list of files as well as their labels, in the format as
     //    subfolder1/file1.JPEG 7
 
-build_rect_list_file.hpp in this project has some utilities for formatting a list file.
+The XCode scheme 'build_rect_image_listfile' will build a list file based on the sliced rect images collected from the turtlebot.
+The XCode scheme 'build_full_image_listfile' will build a list file based on the full images collected from the turtlebot.
+
+### Partitioning the LISTFILE into train and test datasets
+The XCode scheme 'partition-train-test' partitions a given LISTFILE into 60/40 split training and test files
