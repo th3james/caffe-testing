@@ -55,6 +55,9 @@
 		8A3E83821CEF6612000301DD /* list_file_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list_file_writer.cpp; sourceTree = "<group>"; };
 		8A3E83831CEF6612000301DD /* list_file_writer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = list_file_writer.hpp; sourceTree = "<group>"; };
 		8A3E83911CF0AD18000301DD /* build_full_image_set.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_full_image_set.sh; sourceTree = "<group>"; };
+		8A3E83931CF1E6A3000301DD /* train_full_images.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = train_full_images.sh; sourceTree = "<group>"; };
+		8A3E83941CF1E6EA000301DD /* full_image_solver.prototxt */ = {isa = PBXFileReference; lastKnownFileType = text; path = full_image_solver.prototxt; sourceTree = "<group>"; };
+		8A3E83951CF1E751000301DD /* full_image_lenet.prototxt */ = {isa = PBXFileReference; lastKnownFileType = text; path = full_image_lenet.prototxt; sourceTree = "<group>"; };
 		8A500AAB1CD4F1CD0086669F /* caffe-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "caffe-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A500AAE1CD4F1CD0086669F /* build_rect_image_listfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = build_rect_image_listfile.cpp; sourceTree = "<group>"; };
 		8A500B051CD557B10086669F /* caffe 2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "caffe 2.xcodeproj"; path = "caffe/caffe 2.xcodeproj"; sourceTree = "<group>"; };
@@ -127,6 +130,9 @@
 				8A500B221CEA2FF10086669F /* rects_solver.prototxt */,
 				8A500B231CEA307E0086669F /* rects_lenet.prototxt */,
 				8A500B051CD557B10086669F /* caffe 2.xcodeproj */,
+				8A3E83931CF1E6A3000301DD /* train_full_images.sh */,
+				8A3E83941CF1E6EA000301DD /* full_image_solver.prototxt */,
+				8A3E83951CF1E751000301DD /* full_image_lenet.prototxt */,
 			);
 			path = "caffe-test";
 			sourceTree = "<group>";

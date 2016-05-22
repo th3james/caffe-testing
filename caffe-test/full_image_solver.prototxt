@@ -1,5 +1,5 @@
 # The train/test net protocol buffer definition
-net: "rects_lenet.prototxt"
+net: "full_image_lenet.prototxt"
 # test_iter specifies how many forward passes the test should carry out.
 test_iter: 100
 # Carry out testing every 200 training iterations.
@@ -18,6 +18,6 @@ display: 100
 max_iter: 638
 # snapshot intermediate results
 snapshot: 250
-snapshot_prefix: "rects_snapshot"
+snapshot_prefix: "full_image_snapshot"
 # solver mode: CPU or GPU
 solver_mode: CPU
